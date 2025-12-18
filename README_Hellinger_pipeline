@@ -1,0 +1,45 @@
+========= Description of workflow ===========
+
+build_associates_globalbio.py
+>
+consolidator.py # A locality × species presence matrix X (sparse),a tidy locality table with LocalityID, latband, coordinates.
+>
+build_hellinger_euclidian.py # It produces a Hellinger-transformed matrix at a chosen spatial aggregation (e.g., 10 km grid), then computes Euclidean distances.
+>
+cluster_bioregions_hellinger.py 
+>
+map_bioregions_quick.py
+>
+cluster_indicators.py # Defining species for Leiden/Louvain bioregions built from the Hellinger–Euclidean pipeline.
+>
+validate_bioregions_global.py # Computing within-cluster dispersion; between-cluster separation; per cluster sillhouette score, PERMANOVA between clusters
+>
+evaluate_bioregions_communities_global.py # Computing 
+>
+plot_bioregion_network_grass.py #network plot of results 
+
+================== markers_all_clusters.csv =======================
+mean_in = Hellinger values are scaled between 0 and 1, so this is a relative abundance measure.
+            It represents how “typical” the species is within that cluster’s cells.
+
+mean_out = Average Hellinger abundance of that same species outside the cluster — 
+            across all      other clusters combined.
+            This forms the baseline for comparison: how common is the species everywhere else?
+
+delta = mean_in − mean_out; Positive delta → species is more abundant inside the cluster.
+            Negative delta → species is less abundant (depleted).
+            The larger the positive delta, the stronger the cluster-specificity.
+
+cohen_d = High cohen_d values mean a strong and consistent separation. Standardized effect size, 
+            i.e. how big the difference is relative to the variance in the data.
+
+p = Tests whether the distribution of Hellinger values inside the cluster is significantly 
+            greater than outside.
+
+prevalence_in / prevalence_out = Proportion of cells where the species is present (>0) inside vs  
+            outside the cluster. It’s a measure of how widespread the species is within that region. Helps distinguish between:
+	    a rare but diagnostic species (low prevalence, high delta),a common background species (high prevalence everywhere).
+            Example: prevalence_in = 0.85, prevalence_out = 0.05 → species occurs in 85% of cells inside, but only 5% elsewhere.
+
+n_in / n_out = Number of cells considered “inside” vs “outside” that cluster. These tell you how 
+            big each group was during testing. Useful for context (a small n_in = cluster with few cells → lower power).
