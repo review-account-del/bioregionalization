@@ -18,15 +18,15 @@ import matplotlib.pyplot as plt
 @dataclass
 class Config:
     # Inputs from your two pipelines
-    HELL_DIR: str = "/home/eric/GitHub/analysis_OUT/"      # from build_hellinger_euclidean.py
-    LABELS_PATH: str = "/home/eric/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"  # from cluster_bioregions_hellinger.py
+    HELL_DIR: str = "/home/GitHub/analysis_OUT/"      # from build_hellinger_euclidean.py
+    LABELS_PATH: str = "/home/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"  # from cluster_bioregions_hellinger.py
 
     HELL_FEATS_GLOB: str = "hellinger_features_c*_f*.npz"              # CSR (cells × species)
     CELL_INDEX_GLOB: str = "cell_index_*.parquet"                      # rows aligned to HELL CSR
 
     # Optional: path to species names (one column `species`), or a Parquet/CSV
     # with column `species` in the same order as the matrix columns.
-    SPECIES_NAMES_PATH = "/home/eric/GitHub/OUT/locality_species_presence_species_index_f9105.parquet"
+    SPECIES_NAMES_PATH = "/home/GitHub/OUT/locality_species_presence_species_index_f9105.parquet"
 
     MIN_GLOBAL_PREVALENCE: float = 0.05   # skip species present in <Z% of cells
     MIN_DELTA_EARLY: float = 0.00001           # skip M-W test if delta <= this
@@ -37,7 +37,7 @@ class Config:
     MIN_DELTA: float = 0.0        # require positive delta; keep 0.0 for inclusive
 
     # Output
-    OUT_DIR: str = "/home/eric/GitHub/analysis_OUT/"
+    OUT_DIR: str = "/home/GitHub/analysis_OUT/"
 
     # Plots
     MAKE_PLOTS: bool = True

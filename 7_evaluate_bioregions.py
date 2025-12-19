@@ -7,8 +7,8 @@ import skbio
 # =====================
 # CONFIG
 # =====================
-HELL_PATH = "/home/eric/GitHub/analysis_OUT/hellinger_features_c4255_f9105.npz"
-LABELS_PATH = "/home/eric/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"
+HELL_PATH = "/home/GitHub/analysis_OUT/hellinger_features_c4255_f9105.npz"
+LABELS_PATH = "/home/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"
 
 DIST_METRIC = "euclidean"   # in Hellinger space this is correct
 

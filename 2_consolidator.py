@@ -5,12 +5,12 @@ from collections import defaultdict
 from scipy.sparse import coo_matrix, save_npz
 
 # ---------- CONFIG ----------
-ROOT = "/home/eric/GitHub/OUT/"
+ROOT = "/home/GitHub/OUT/"
 PATTERN = os.path.join(ROOT, "*", "LocalitySpecies_ALL.txt")
 OUT_MATRIX = "locality_species_presence.npz"
 OUT_META   = "locality_metadata.parquet"
-SPECIES_LOOKUP = "/home/eric/GitHub/metadata/name_lookup.csv"
-EXCLUDE_LIST = "/home/eric/GitHub/metadata/filterlist.csv"
+SPECIES_LOOKUP = "/home/GitHub/metadata/name_lookup.csv"
+EXCLUDE_LIST = "/home/GitHub/metadata/filterlist.csv"
 # ----------------------------
 
 def load_exclude_ids(path: str) -> set[str]:

@@ -18,12 +18,12 @@ import matplotlib.pyplot as plt
 
 CONFIG = {
     # Paths
-    "COMM_MATRIX_PATH": "/home/eric/GitHub/analysis_OUT/hellinger_features_c4255_f9105.npz",
-    "CELL_INDEX_PATH": "/home/eric/GitHub/analysis_OUT/cell_index_4255.parquet",
-    "CLUSTERS_PATH": "/home/eric/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet", 
-    "SPECIES_INDEX_PATH": "/home/eric/GitHub/OUT/locality_species_presence_species_index_f9105.parquet",
-    "MARKERS_PATH": "/home/eric/GitHub/analysis_OUT/markers_all_clusters.csv",  # optional
-    "OUTPUT_DIR": "/home/eric/GitHub/analysis_OUT/",
+    "COMM_MATRIX_PATH": "/home/GitHub/analysis_OUT/hellinger_features_c4255_f9105.npz",
+    "CELL_INDEX_PATH": "/home/GitHub/analysis_OUT/cell_index_4255.parquet",
+    "CLUSTERS_PATH": "/home/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet", 
+    "SPECIES_INDEX_PATH": "/home/GitHub/OUT/locality_species_presence_species_index_f9105.parquet",
+    "MARKERS_PATH": "/home/GitHub/analysis_OUT/markers_all_clusters.csv",  # optional
+    "OUTPUT_DIR": "/home/GitHub/analysis_OUT/",
 
 
     # Column names

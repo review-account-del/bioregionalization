@@ -15,19 +15,19 @@ from scipy.spatial import cKDTree
 
 # =============== CONFIG (PLANTS-ONLY VARIANT) =====================
 # Root occurrence parquet parts
-OCCURRENCE_DIR =  "/home/eric/GitHub/occurrence_ds/"          # Path to folder with parquet parts
-REDLIST_CSV    = "/home/eric/GitHub/metadata/swedish_red-list.csv"   # National red list (semicolon CSV)
+OCCURRENCE_DIR =  "/home/GitHub/occurrence_ds/"          # Path to folder with parquet parts
+REDLIST_CSV    = "/home/GitHub/metadata/swedish_red-list.csv"   # National red list (semicolon CSV)
 
 # Filter list (semicolon-separated; first column contains Dyntaxa "Taxon id")
-PLANTLIST_CSV  = "/home/eric/GitHub/filterlist.csv"
+PLANTLIST_CSV  = "/home/GitHub/filterlist.csv"
 
 # Output root for the run
-OUTPUT_ROOT    = "/home/eric/GitHub/OUT/"
+OUTPUT_ROOT    = "/home/GitHub/OUT/"
 
 # Focal species selectors
 FOCAL_TAXONID_NUMS = []                 # e.g., [227592, 6003469]
 FOCAL_SCI_NAMES    = []                 # scientificName exact match(es)
-FOCAL_CSV          = "/home/eric/GitHub/grandlist.csv"  # Path to focal taxon list
+FOCAL_CSV          = "/home/GitHub/grandlist.csv"  # Path to focal taxon list
 
 BUFFER_M       = 50      # buffer radius in meters
 SAMPLE_SITES   = 400     # max number of focal occurrences (sites) to buffer; if fewer exist, use all

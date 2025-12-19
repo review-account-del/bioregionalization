@@ -9,7 +9,7 @@ from sklearn.metrics import pairwise_distances
 # =========================
 # CONFIG
 # =========================
-OUT_DIR = "/home/eric/GitHub/analysis_OUT/"
+OUT_DIR = "/home/GitHub/analysis_OUT/"
 
 # Inputs produced earlier
 KNN_GLOB = "knn_k*_c*.npz"             # kNN graph with distances

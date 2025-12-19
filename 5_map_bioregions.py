@@ -10,9 +10,9 @@ from matplotlib.patches import Rectangle
 # ----------------------
 # CONFIG (edit as needed)
 # ----------------------
-OUT_DIR = "/home/eric/GitHub/analysis_OUT/"
-LABEL_FILE = "/home/eric/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"  # produced by cluster_bioregions.py
-PNG_OUT = "/home/eric/GitHub/analysis_OUT/bioregions_quickmap.png"
+OUT_DIR = "/home/GitHub/analysis_OUT/"
+LABEL_FILE = "/home/GitHub/analysis_OUT/bioregion_labels_TUNED.parquet"  # produced by cluster_bioregions.py
+PNG_OUT = "/home/GitHub/analysis_OUT/bioregions_quickmap.png"
 
 # IMPORTANT: must match the grid used in your Hellinger build
 GRID_SIZE_M = 10_000

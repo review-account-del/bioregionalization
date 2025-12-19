@@ -12,4 +12,4 @@ To run the pipe line: start to download/clone the deposit and arrange a folder s
             |__python_script_2.py
 
 Open the Python scripts in numeric order (start with 1_build_assoc…). Update the folder- and file paths in CONFIG, but be sure not to change the name of specified files. Run each script in numeric order. 
-Note: the database of occurrence data (stored in occurrence_ds) is on GitHub just a sample due to very large files. Thus, the output from the pipe line will not by exactly as the results in the main paper. 
+Note: the database of occurrence data (stored in occurrence_ds) is on GitHub just a sample due to very large files. Thus, the output from the pipe line will not be exactly as the results in the main paper. 

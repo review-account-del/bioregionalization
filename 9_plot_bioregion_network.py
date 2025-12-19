@@ -29,7 +29,7 @@ from matplotlib.collections import LineCollection
 # =========================
 
 # Same OUT_DIR as in your grasslands Hellinger / Leiden scripts
-OUT_DIR = "/home/eric/GitHub/analysis_OUT/"
+OUT_DIR = "/home/GitHub/analysis_OUT/"
 
 # Files produced by your existing pipeline
 KNN_GLOB_PATTERN = "knn_k*_c*.npz"          # from build_hellinger_euclidean.py

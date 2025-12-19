@@ -10,14 +10,14 @@ import glob, os, shutil, re
 # =========================
 # CONFIG — EDIT AS NEEDED
 # =========================
-MATRIX_PATH = "/home/eric/GitHub/OUT/locality_species_presence.npz"
-META_PATH   = "/home/eric/GitHub/OUT/locality_metadata.parquet"
+MATRIX_PATH = "/home/GitHub/OUT/locality_species_presence.npz"
+META_PATH   = "/home/GitHub/OUT/locality_metadata.parquet"
 
 # Spatial aggregation (meters); SWEREF 99 TM is metric.
 GRID_SIZE_M = 10_000  # e.g. 10 km grid. Try 20_000 if you need fewer cells.
 
 # Outputs
-OUT_DIR = "/home/eric/GitHub/analysis_OUT/"
+OUT_DIR = "/home/GitHub/analysis_OUT/"
 SAVE_KNN = True       # also build a sparse kNN graph on Hellinger features
 K_NEIGHBORS = 15
 
